@@ -10,13 +10,43 @@
 <body>
     <div class="container">
 
-        <header>
-        </header>
+ <header>
+            <nav class="masthead">
+                <a href="/index.html" class="btn-light">Home</a>
+                <a href="/about.html" class="btn-light">About</a>
+                <a href="/contact.html" class="btn-light">Contact</a>
+ </header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Abricate.pl</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
 
         <main>
-        
+            <section class="contact-form">
+                <h2>Contact Us</h2>
+                <form action="mailto:make@abricate.com" method="post" enctype="text/plain">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name"><br><br>
 
- 
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email"><br><br>
+
+                    <label for="subject">Subject:</label><br>
+                    <input type="text" id="subject" name="subject"><br><br>
+
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="5" cols="30"></textarea><br><br>
+
+                    <input type="submit" value="Send Email">
+                    <input type="reset" value="Reset">
+                </form>
+            </section>
         </main>
 
         <footer>
@@ -25,4 +55,3 @@
 
     </div>
 </body>
-</html>
